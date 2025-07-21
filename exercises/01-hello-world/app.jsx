@@ -1,12 +1,12 @@
-import React from "react"; // Main React.js library
+import React from 'react'; // importar la librería de react
+import ReactDOM from 'react-dom'; // importar react-dom para que react genere el html
 
-import ReactDOM from "react-dom"; // We use ReactDOM to render into the DOM
+// QUÉ: esta variable contiene todo el HTML que va a ser renderizado
+let output = <span>James is <strong>12</strong> years old</span>
 
-// WHAT: This variable contains the html to render
-let output = <span>James is 12 years old</span>;
 
-// WHERE: A DOM element that will contain the entire react generated html
-const myDiv = document.querySelector("#myDiv");
+// DÓNDE: Un elemento del DOM que contendrá todo el html generado por react
+const myDiv = document.querySelector('#myDiv');
 
-                //what  //where
+                //qué   //dónde
 ReactDOM.render(output, myDiv);
